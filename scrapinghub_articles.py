@@ -20,9 +20,8 @@ while True:
     soup = BeautifulSoup(response.content, 'html.parser')
 
     for post in soup.find_all('div', class_='post-item'):
-        title = post.find('h2')
-        link = title.find('a')
-        date = post.find('span', class_='date').text.strip()
+        link = post.select_one('h2 a')
+        date = post.select_one('span.date').text.strip()
 
         articles.append({
             'title': link.text, 
