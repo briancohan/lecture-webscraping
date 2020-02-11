@@ -1,3 +1,0 @@
-In prepping for this presentation, I wanted to curate a list of good blog articles from ScrapingHub's webiste. There were 16 pages of articles and each article took up a lot of screen real eastate. It would have taken a long time to go through the list of articles.
-
-This script automatically parses the pages, and if it finds a link to the "next page", it will continue to parse that. Since the intent was to add the articles to the jupyter notebook, the article list is saved in markdown.
